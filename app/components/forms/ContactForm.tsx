@@ -26,28 +26,32 @@ export default function ContactForm() {
     resolver: zodResolver(contactSchema),
   })
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = (data: ContactFormData) => {
     setIsSubmitting(true)
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
+    // Create mailto link with form data
+    const subject = `Contact Form: ${data.interest} - ${data.name}`
+    const body = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Location: ${data.location}
+Interest: ${data.interest}
 
-      if (response.ok) {
-        setIsSubmitted(true)
-        reset()
-      } else {
-        throw new Error('Failed to send message')
-      }
-    } catch (error) {
-      console.error('Form submission error:', error)
-      alert('Failed to send message. Please try again.')
-    } finally {
-      setIsSubmitting(false)
-    }
+Message:
+${data.message}
+    `.trim()
+
+    const mailtoLink = `mailto:info@enercam.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+    // Open mailto link
+    window.location.href = mailtoLink
+
+    // Show success message
+    setIsSubmitted(true)
+    reset()
+
+    setIsSubmitting(false)
   }
 
   if (isSubmitted) {
@@ -61,7 +65,7 @@ export default function ContactForm() {
           </div>
           <h3 className="text-xl font-semibold text-neutral-900 mb-2">Message Sent!</h3>
           <p className="text-neutral-600">
-            Thank you for contacting us. We'll get back to you within 24 hours.
+            Your email client has opened with your message. Send it to complete your inquiry.
           </p>
         </div>
         <Button onClick={() => setIsSubmitted(false)} variant="outline">

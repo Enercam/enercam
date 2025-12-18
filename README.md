@@ -8,7 +8,8 @@ A production-ready, multilingual website for Enercam Solar Roofs, featuring inte
 - **Mobile-First Design**: Optimized for 70% mobile traffic in Central Africa
 - **Performance Optimized**: Sub-2-second load times, Core Web Vitals compliant
 - **SEO Ready**: Structured data, sitemap generation, meta optimization
-- **Lead Generation**: Working contact forms with email integration
+- **Static Website**: No backend required - pure static site with images
+- **Contact Integration**: Mailto links for seamless email communication
 - **Content Management**: Structured data for products, projects, and team
 
 ## 🚀 Quick Start
@@ -75,21 +76,9 @@ The website supports English (`/en`) and French (`/fr`) with automatic locale de
 2. Add locale to `middleware.ts`
 3. Update navigation and content
 
-## 📧 Email Configuration
+## 📧 Contact Integration
 
-The contact forms use [Resend](https://resend.com) for email delivery.
-
-### Setup
-
-1. Create a Resend account
-2. Get your API key
-3. Configure environment variables:
-
-```bash
-RESEND_API_KEY=your_api_key_here
-EMAIL_FROM=noreply@enercam.com
-EMAIL_TO=info@enercam.com
-```
+The website uses mailto: links for contact forms, opening the user's default email client with pre-filled content. No email service configuration required.
 
 ## 🚀 Deployment
 
@@ -116,15 +105,14 @@ vercel --prod
 
 #### Environment Variables
 
-Set these in your Vercel dashboard:
+Set these in your Vercel dashboard (optional):
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
-RESEND_API_KEY=your_resend_api_key
-EMAIL_FROM=noreply@enercam.com
-EMAIL_TO=info@enercam.com
 NEXT_PUBLIC_GA_ID=your_google_analytics_id
 ```
+
+**Note**: No backend configuration required. Contact forms use mailto: links.
 
 ### Custom Domain
 

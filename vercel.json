@@ -21,17 +21,6 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    }
-  ],
-  "functions": {
-    "app/api/contact/route.ts": {
-      "maxDuration": 10
-    }
-  },
   "env": {
     "NEXT_PUBLIC_SITE_URL": "@site_url"
   }
