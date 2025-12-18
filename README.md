@@ -106,9 +106,10 @@ vercel --prod
 Set these in your Vercel dashboard (optional):
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
 NEXT_PUBLIC_GA_ID=your_google_analytics_id
 ```
+
+**Note**: `NEXT_PUBLIC_SITE_URL` is not required for static sites.
 
 **Note**: No backend configuration required. Contact forms use mailto: links.
 
