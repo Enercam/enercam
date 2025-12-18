@@ -1,0 +1,147 @@
+{
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "howItWorks": "How It Works",
+    "projects": "Projects",
+    "about": "About Us",
+    "financing": "Financing",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "partners": "Partners",
+    "careers": "Careers",
+    "team": "Our Team",
+    "values": "Values & Mission"
+  },
+  "hero": {
+    "title": "Smarter Roofing. Solar Power Built In.",
+    "subtitle": "Beautiful, durable roofing that generates clean energy for your home.",
+    "primaryCTA": "Get a Free Quote",
+    "secondaryCTA": "See How It Works"
+  },
+  "trustIndicators": {
+    "experience": "10+ Years Experience",
+    "employees": "30+ Employees",
+    "countries": "6 Countries"
+  },
+  "features": {
+    "title": "Why Choose Enercam?",
+    "subtitle": "Experience the future of roofing with integrated solar technology",
+    "lowerBills": {
+      "title": "Lower Energy Bills",
+      "description": "Generate your own clean electricity and reduce monthly costs from day one"
+    },
+    "integratedDesign": {
+      "title": "Integrated Design",
+      "description": "Beautiful solar tiles that blend seamlessly into your roof without bulky panels"
+    },
+    "warranty": {
+      "title": "35-Year Warranty",
+      "description": "Industry-leading warranty coverage on both roofing and energy components"
+    },
+    "expertInstallation": {
+      "title": "Expert Installation",
+      "description": "Certified professionals with 20+ years of experience in solar roofing"
+    }
+  },
+  "products": {
+    "title": "Complete Solar Solutions",
+    "subtitle": "From integrated solar roofing to advanced battery storage, discover products designed specifically for Central African conditions.",
+    "viewAll": "View All Products",
+    "explore": "Explore Our Products",
+    "warranty": "year warranty"
+  },
+  "cta": {
+    "title": "Ready to Power Your Future?",
+    "subtitle": "Join hundreds of satisfied customers who have switched to clean, renewable energy with Enercam.",
+    "primaryCTA": "Get Your Free Quote",
+    "secondaryCTA": "Call Us Now",
+    "responseTime": "24-hour response time",
+    "obligation": "No obligation consultation",
+    "countries": "Serving 6 countries across Central Africa"
+  },
+  "contact": {
+    "title": "Ready to Power Your Future?",
+    "subtitle": "Get in touch with our solar experts. We'll help you find the perfect integrated solar roofing solution for your home or business.",
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number (Optional)",
+      "location": "Service Area",
+      "interest": "How can we help you?",
+      "message": "Message",
+      "submit": "Send Message",
+      "submitting": "Sending Message...",
+      "success": "Message Sent!",
+      "successMessage": "Thank you for contacting us. We'll get back to you within 24 hours.",
+      "sendAnother": "Send Another Message",
+      "responseTime": "We respond to all inquiries within 24 hours."
+    },
+    "info": {
+      "getInTouch": "Get in Touch",
+      "phone": "Phone",
+      "email": "Email",
+      "serviceAreas": "Service Areas",
+      "quickLinks": "Quick Links",
+      "businessHours": "Business Hours",
+      "mondayFriday": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Premium integrated solar roofing solutions for Central Africa. Beautiful, durable roofing that generates clean energy for your home."
+    },
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact Us",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "copyright": "© {year} Enercam Solar Roofs. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "menu": "Menu",
+    "search": "Search",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "explore": "Explore",
+    "contactUs": "Contact Us",
+    "getQuote": "Get Quote",
+    "scrollToExplore": "Scroll to explore"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "messageTooShort": "Message must be at least 10 characters"
+  },
+  "interests": {
+    "quote": "Request a Quote",
+    "general": "General Inquiry",
+    "partnership": "Partnership Opportunity",
+    "careers": "Career Opportunity",
+    "support": "Technical Support"
+  },
+  "countries": {
+    "cameroon": "Cameroon",
+    "chad": "Chad",
+    "gabon": "Gabon",
+    "congo": "Congo",
+    "equatorialGuinea": "Equatorial Guinea",
+    "centralAfricanRepublic": "Central African Republic"
+  }
+}
