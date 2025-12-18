@@ -169,9 +169,7 @@ class WebsiteTester {
     // Test redirects
     await this.testPageLoad(`${this.baseUrl}/home`, 307); // Should redirect
 
-    // Test API endpoints
-    this.log('Testing API endpoints...', 'info');
-    await this.testPageLoad(`${this.baseUrl}/api/contact`, 405); // Method not allowed for GET
+    // Note: This is a static website with no API endpoints
 
     // Test form submission (without actual email sending)
     this.log('Testing form validation...', 'info');

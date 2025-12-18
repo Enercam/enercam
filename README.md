@@ -49,13 +49,11 @@ enercam-website/
 │   │       ├── contact/         # Contact page
 │   │       ├── products/        # Products overview
 │   │       └── projects/        # Projects showcase
-│   ├── api/                     # API routes
-│   │   └── contact/             # Contact form handler
 │   ├── components/              # Reusable components
 │   │   ├── ui/                  # UI primitives (Radix)
 │   │   ├── layout/              # Layout components
 │   │   ├── sections/            # Page sections
-│   │   └── forms/               # Form components
+│   │   └── forms/               # Form components (mailto links)
 │   ├── data/                    # Content data
 │   ├── lib/                     # Utilities and config
 │   └── types/                   # TypeScript definitions
@@ -197,10 +195,10 @@ The website uses Unsplash placeholder images for development. Replace with produ
 ## 🔒 Security
 
 - Input validation with Zod schemas
-- Rate limiting on API endpoints
 - CSP headers configured
 - XSS protection enabled
-- Secure email handling
+- Static site - no server-side vulnerabilities
+- Mailto links for secure contact handling
 
 ## 📝 Content Management
 
@@ -226,7 +224,7 @@ Update `messages/en.json` and `messages/fr.json` for new content
 ### Manual Testing Checklist
 
 - [ ] All pages load correctly
-- [ ] Contact forms submit successfully
+- [ ] Contact forms open email client with pre-filled data
 - [ ] Mobile responsiveness across devices
 - [ ] Cross-browser compatibility (Chrome, Safari, Firefox)
 - [ ] All links work correctly
