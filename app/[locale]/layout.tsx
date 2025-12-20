@@ -1,8 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params: { locale }
 }: {
@@ -62,17 +59,24 @@ export default async function RootLayout({
 }) {
   // Ensure that the incoming `locale` is valid
   if (!['en', 'fr'].includes(locale)) {
-    notFound();
+    return (
+      <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+        <body className="font-sans min-h-screen flex flex-col">
+          <div className="min-h-screen flex items-center justify-center">
+            <div className="text-center">
+              <h1 className="text-2xl font-bold mb-4">Page Not Found</h1>
+              <p className="text-gray-600">The requested language is not available.</p>
+            </div>
+          </div>
+        </body>
+      </html>
+    );
   }
-
-  const messages = await getMessages();
 
   return (
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
       <body className="font-sans min-h-screen flex flex-col">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
