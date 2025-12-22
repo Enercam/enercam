@@ -77,7 +77,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   <Badge variant="secondary">
                     {project.savingsPercent}% Energy Savings
                   </Badge>
-                  <Badge variant="outline">
+                  <Badge variant="secondary-outline">
                     {new Date(project.date).getFullYear()}
                   </Badge>
                 </div>

@@ -220,7 +220,7 @@ const NotificationBadge = React.forwardRef<
     count?: number
     maxCount?: number
   }
->(({ count = 0, maxCount = 99, children, ...props }, ref) => {
+>(({ count = 0, maxCount = 99, ...props }, ref) => {
   const displayCount = count > maxCount ? `${maxCount}+` : count.toString()
 
   if (count === 0) return null

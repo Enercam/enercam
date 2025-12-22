@@ -1,8 +1,13 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "pnpm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "regions": ["fra1"],
+  "functions": {
+    "app/**/*.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
   "headers": [
     {
       "source": "/:all*(svg|jpg|png|webp|avif|gif)",
@@ -21,4 +26,10 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
 }

@@ -41,7 +41,7 @@ export default function CTA({
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button size="lg" variant={background === 'primary' ? 'secondary' : 'default'} asChild>
+            <Button size="lg" variant={background === 'primary' ? 'secondary' : 'outline'} asChild>
               <Link href={primaryCTA.href}>{primaryCTA.text}</Link>
             </Button>
             {secondaryCTA && (

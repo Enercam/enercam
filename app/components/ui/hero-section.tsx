@@ -18,7 +18,6 @@ export function HeroSection({
   subtitle,
   primaryCTA,
   secondaryCTA,
-  backgroundImage,
   className = ''
 }: HeroSectionProps) {
   const titleWords = title.split(' ')

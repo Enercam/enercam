@@ -176,7 +176,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   <h3 className="text-h3 font-display mb-6">Applications</h3>
                   <div className="flex flex-wrap gap-2">
                     {product.applications.map((application, index) => (
-                      <Badge key={index} variant="outline">
+                      <Badge key={index} variant="secondary-outline">
                         {application}
                       </Badge>
                     ))}

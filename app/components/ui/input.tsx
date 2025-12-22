@@ -129,7 +129,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const state = error ? "error" : success ? "success" : warning ? "warning" : stateProp
 
     // Generate unique IDs
-    const inputId = id || React.useId()
+    const generatedId = React.useId()
+    const inputId = id || generatedId
     const descriptionId = description ? `${inputId}-description` : undefined
     const errorId = error ? `${inputId}-error` : undefined
     const successId = success ? `${inputId}-success` : undefined
