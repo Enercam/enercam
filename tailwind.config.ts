@@ -1,390 +1,80 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
-  darkMode: 'class',
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
-        // Primary brand colors with semantic variations
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          50: '#eff8ff',
-          100: '#daf0ff',
-          200: '#bde4ff',
-          300: '#91d4ff',
-          400: '#5bb8ff',
-          500: '#3b9eff',
-          600: '#257df4',
-          700: '#1e68e0',
-          800: '#1f56b8',
-          900: '#1f4995',
-          950: '#162c5a',
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
-        // Secondary accent colors
         secondary: {
-          50: '#f0fdfa',
-          100: '#ccfbf1',
-          200: '#99f6e4',
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',
-          600: '#0d9488',
-          700: '#0f766e',
-          800: '#115e59',
-          900: '#134e4a',
-          950: '#042f2e',
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
-        // Success states
-        success: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
-          950: '#052e16',
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
-        // Warning states
-        warning: {
-          50: '#fffbeb',
-          100: '#fef3c7',
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
-          700: '#b45309',
-          800: '#92400e',
-          900: '#78350f',
-          950: '#451a03',
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
-        // Error states
-        error: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          200: '#fecaca',
-          300: '#fca5a5',
-          400: '#f87171',
-          500: '#ef4444',
-          600: '#dc2626',
-          700: '#b91c1c',
-          800: '#991b1b',
-          900: '#7f1d1d',
-          950: '#450a0a',
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-        // Neutral grays with better contrast
-        neutral: {
-          50: '#fafbfc',
-          100: '#f1f3f4',
-          200: '#e8eaed',
-          300: '#dadce0',
-          400: '#bdc1c6',
-          500: '#9aa0a6',
-          600: '#80868b',
-          700: '#5f6368',
-          800: '#3c4043',
-          900: '#202124',
-          950: '#0d0d0d',
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
-        // Surface colors for cards and backgrounds
-        surface: {
-          primary: '#ffffff',
-          secondary: '#f8fafc',
-          tertiary: '#f1f5f9',
-          quaternary: '#e2e8f0',
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
-        // Special gradients and effects
-        gradient: {
-          primary: {
-            start: '#3b9eff',
-            end: '#257df4',
-          },
-          secondary: {
-            start: '#14b8a6',
-            end: '#0d9488',
-          },
-          accent: {
-            start: '#fbbf24',
-            end: '#f59e0b',
-          },
-        },
-      },
-      fontFamily: {
-        sans: [
-          'Inter',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'Roboto',
-          'Oxygen',
-          'Ubuntu',
-          'Cantarell',
-          'system-ui',
-          'sans-serif',
-        ],
-        display: [
-          'Poppins',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'system-ui',
-          'sans-serif',
-        ],
-        mono: [
-          'JetBrains Mono',
-          'SF Mono',
-          'Monaco',
-          'Inconsolata',
-          'Roboto Mono',
-          'source-code-pro',
-          'monospace',
-        ],
-      },
-      fontSize: {
-        // Fluid typography scale
-        'xs': ['clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem)', { lineHeight: '1.5' }],
-        'sm': ['clamp(0.875rem, 0.8rem + 0.375vw, 1rem)', { lineHeight: '1.5' }],
-        'base': ['clamp(1rem, 0.9rem + 0.5vw, 1.125rem)', { lineHeight: '1.6' }],
-        'lg': ['clamp(1.125rem, 1rem + 0.625vw, 1.25rem)', { lineHeight: '1.6' }],
-        'xl': ['clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem)', { lineHeight: '1.4' }],
-        '2xl': ['clamp(1.5rem, 1.3rem + 1vw, 1.875rem)', { lineHeight: '1.3' }],
-        '3xl': ['clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem)', { lineHeight: '1.2' }],
-        '4xl': ['clamp(2.25rem, 1.9rem + 1.75vw, 3rem)', { lineHeight: '1.1' }],
-        '5xl': ['clamp(3rem, 2.4rem + 3vw, 4.5rem)', { lineHeight: '1' }],
-        '6xl': ['clamp(3.75rem, 3rem + 3.75vw, 6rem)', { lineHeight: '1' }],
-        '7xl': ['clamp(4.5rem, 3.6rem + 4.5vw, 7.5rem)', { lineHeight: '1' }],
-        '8xl': ['clamp(6rem, 4.8rem + 6vw, 9rem)', { lineHeight: '1' }],
-        '9xl': ['clamp(8rem, 6.4rem + 8vw, 12rem)', { lineHeight: '1' }],
-      },
-      spacing: {
-        // Consistent spacing scale
-        '18': '4.5rem',
-        '88': '22rem',
-        '112': '28rem',
-        '128': '32rem',
-        '144': '36rem',
-      },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
-        },
-        screens: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1536px',
-        },
-      },
-      boxShadow: {
-        // Advanced shadow system
-        'xs': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-        'sm': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-        'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-        'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-        '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
-        'inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
-        'none': '0 0 #0000',
-        // Colored shadows
-        'primary': '0 4px 14px 0 rgb(59 130 246 / 0.15)',
-        'secondary': '0 4px 14px 0 rgb(20 184 166 / 0.15)',
-        'success': '0 4px 14px 0 rgb(34 197 94 / 0.15)',
-        'warning': '0 4px 14px 0 rgb(245 158 11 / 0.15)',
-        'error': '0 4px 14px 0 rgb(239 68 68 / 0.15)',
-        // Glassmorphism shadows
-        'glass': '0 8px 32px 0 rgb(31 38 135 / 0.37)',
-        'glass-sm': '0 4px 16px 0 rgb(31 38 135 / 0.2)',
       },
       borderRadius: {
-        'none': '0',
-        'sm': '0.125rem',
-        DEFAULT: '0.25rem',
-        'md': '0.375rem',
-        'lg': '0.5rem',
-        'xl': '0.75rem',
-        '2xl': '1rem',
-        '3xl': '1.5rem',
-        'full': '9999px',
-        // Special radii for modern design
-        'blob': '30% 70% 70% 30% / 30% 30% 70% 70%',
-        'morph': '60% 40% 30% 70% / 60% 30% 70% 40%',
-      },
-      backdropBlur: {
-        xs: '2px',
-        sm: '4px',
-        md: '8px',
-        lg: '12px',
-        xl: '16px',
-        '2xl': '24px',
-        '3xl': '40px',
-      },
-      animation: {
-        // Enhanced animations
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'fade-in-up': 'fadeInUp 0.6s ease-out',
-        'fade-in-down': 'fadeInDown 0.6s ease-out',
-        'fade-in-left': 'fadeInLeft 0.6s ease-out',
-        'fade-in-right': 'fadeInRight 0.6s ease-out',
-        'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-        'slide-down': 'slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-        'slide-left': 'slideLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-        'slide-right': 'slideRight 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-        'scale-in': 'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
-        'scale-out': 'scaleOut 0.3s ease-in',
-        'bounce-in': 'bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-        'bounce-out': 'bounceOut 0.4s ease-in',
-        'rotate-in': 'rotateIn 0.6s ease-out',
-        'flip-in': 'flipIn 0.6s ease-out',
-        'morph': 'morph 8s ease-in-out infinite',
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'shimmer': 'shimmer 2s linear infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
-        'float': 'float 3s ease-in-out infinite',
-        'wiggle': 'wiggle 1s ease-in-out infinite',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
-        fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(2rem)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        fadeInDown: {
-          '0%': { opacity: '0', transform: 'translateY(-2rem)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        fadeInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-2rem)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        fadeInRight: {
-          '0%': { opacity: '0', transform: 'translateX(2rem)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(0)' },
-        },
-        slideDown: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(0)' },
-        },
-        slideLeft: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateY(0)' },
-        },
-        slideRight: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-        scaleIn: {
-          '0%': { transform: 'scale(0.9)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
-        },
-        scaleOut: {
-          '0%': { transform: 'scale(1)', opacity: '1' },
-          '100%': { transform: 'scale(0.9)', opacity: '0' },
-        },
-        bounceIn: {
-          '0%': { transform: 'scale(0.3)', opacity: '0' },
-          '50%': { transform: 'scale(1.05)' },
-          '70%': { transform: 'scale(0.9)' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
-        },
-        bounceOut: {
-          '0%': { transform: 'scale(1)', opacity: '1' },
-          '100%': { transform: 'scale(0.3)', opacity: '0' },
-        },
-        rotateIn: {
-          '0%': { transform: 'rotate(-180deg)', opacity: '0' },
-          '100%': { transform: 'rotate(0)', opacity: '1' },
-        },
-        flipIn: {
-          '0%': { transform: 'rotateY(-90deg)', opacity: '0' },
-          '100%': { transform: 'rotateY(0)', opacity: '1' },
-        },
-        morph: {
-          '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
-          '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
-        },
-        shimmer: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
-        glow: {
-          '0%': { boxShadow: '0 0 20px rgb(59 130 246 / 0.5)' },
-          '100%': { boxShadow: '0 0 40px rgb(59 130 246 / 0.8)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
-      zIndex: {
-        '0': '0',
-        '10': '10',
-        '20': '20',
-        '30': '30',
-        '40': '40',
-        '50': '50',
-        '60': '60',
-        '70': '70',
-        '80': '80',
-        '90': '90',
-        '100': '100',
-        'auto': 'auto',
-      },
-      transitionProperty: {
-        'height': 'height',
-        'spacing': 'margin, padding',
-      },
-      transitionDuration: {
-        '0': '0ms',
-        '25': '25ms',
-        '50': '50ms',
-        '75': '75ms',
-        '100': '100ms',
-        '150': '150ms',
-        '200': '200ms',
-        '300': '300ms',
-        '500': '500ms',
-        '700': '700ms',
-        '1000': '1000ms',
-      },
-      transitionTimingFunction: {
-        'bounce-in': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-        'bounce-out': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-        'ease-in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
-        'ease-out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [
-    require('tailwindcss-animate'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
-}
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
 
 export default config

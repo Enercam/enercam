@@ -1,0 +1,313 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Smarter Roofing. Solar Power Built In.",
+      "subtitle": "Beautiful, durable roofing that generates clean energy for your home.",
+      "cta": {
+        "quote": "Get a Free Quote",
+        "howItWorks": "See How It Works"
+      }
+    },
+    "future": {
+      "title": "The Future of Roofing",
+      "description": "Enercam® solar roofs deliver premium roofing systems that look stunning, protect your home, and power your life with clean energy. No bulky panels. No compromises. Just pure performance. No need to double-roof your home, factory, cottage etc."
+    },
+    "whyChoose": {
+      "title": "Why Homeowners Choose Enercam®",
+      "items": {
+        "0": "Lower Energy Bills from day one",
+        "1": "Integrated Solar Roofing with exceptional aesthetics",
+        "2": "35-Year Warranty on roofing and energy components",
+        "3": "Expert Installation by certified professionals"
+      }
+    },
+    "technology": {
+      "title": "Our Technology",
+      "description": "Our advanced solar tiles blend seamlessly into your roofline while maximizing sunlight capture. Avoid double-roofing your home- hence significant construction cost savings. Paired with optional battery storage, you get reliable energy day and night."
+    },
+    "process": {
+      "title": "How Solar Roofing Works",
+      "subtitle": "A seamless journey from design to power generation.",
+      "steps": {
+        "assessment": {
+          "title": "Assessment & Design",
+          "description": "We analyze your roof and design a custom system to maximize energy production."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Our certified team handles roof preparation and precise solar tile installation."
+        },
+        "integration": {
+          "title": "Electrical Integration",
+          "description": "We connect your system to the home grid and battery storage safely."
+        },
+        "activation": {
+          "title": "Activation",
+          "description": "System testing, activation, and training on how to monitor your energy."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Real Results",
+      "quote": "Switching to Enercam® was the best decision we made for our home.",
+      "author": "The Mbeh Family",
+      "cta": "Explore More Success Stories"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "careers": "Careers",
+    "faq": "FAQs",
+    "partners": "Partners",
+    "projects": "Projects",
+    "projectsTestimonials": "Projects & Testimonials",
+    "whyEnercam": "Why Enercam",
+    "recommendations": "Recommendations"
+  },
+  "WhyEnercamPage": {
+    "title": "Why Enercam",
+    "subtitle": "Smarter roofing, stronger savings, and a greener future.",
+    "future": {
+      "title": "The Future of Roofing",
+      "description": "Enercam® solar roofs deliver premium roofing systems that look stunning, protect your home, and power your life with clean energy. No bulky panels. No compromises. Just pure performance. No need to double-roof your home, factory, cottage etc."
+    },
+    "benefits": {
+      "title": "Why Homeowners Choose Enercam",
+      "items": {
+        "0": {
+          "title": "Lower Energy Bills",
+          "description": "Start saving on electricity costs from day one with high-efficiency solar generation."
+        },
+        "1": {
+          "title": "Integrated Aesthetics",
+          "description": "Solar roofing that blends seamlessly with your home architecture."
+        },
+        "2": {
+          "title": "35-Year Warranty",
+          "description": "Industry-leading warranty on both roofing and energy components."
+        },
+        "3": {
+          "title": "Expert Installation",
+          "description": "Installed by certified professionals ensuring safety and longevity."
+        }
+      }
+    }
+  },
+  "RecommendationsPage": {
+    "title": "The Enercam Way",
+    "subtitle": "Tailored recommendations for your specific energy needs.",
+    "methods": {
+      "title": "Our Recommendation Approach",
+      "description": "At Enercam, we recommend various solar and cost saving solutions depending on our client’s needs and circumstances. Based on the client’s budget and circumstances, we generally recommend Integrated or complete solar roofs, retro-fitting or brand new, coastal or hinterland, finance or outright ownership."
+    },
+    "needBased": {
+      "title": "Need Based",
+      "integrated": {
+        "title": "Integrated Solar Roof",
+        "description": "Partial and embedded solar roof. Can be progressively converted to complete solar roofs depending on client’s needs."
+      },
+      "complete": {
+        "title": "Complete Solar Roof",
+        "description": "End-to-end solar roofs delivering the highest output. Recommended for energy intensive households and businesses (Warehouse and factories)."
+      }
+    },
+    "stageBased": {
+      "title": "Stage Based",
+      "retrofit": {
+        "title": "Retro-fitting",
+        "description": "We retro-fit with custom-built solar sheets (Mema™ sheets). Trapezoidal and uniformed-waved solar sheets to fit any client needs."
+      },
+      "new": {
+        "title": "New Solar Roofs",
+        "description": "Best for new builds. Our Mema, Heliu, and Roofit solar roofs are best sellers to pick from."
+      }
+    }
+  },
+  "ProductsPage": {
+    "title": "Our Products",
+    "subtitle": "Cutting-edge solar solutions for every need.",
+    "categories": {
+      "solarRoofs": {
+        "title": "Solar Roofs",
+        "description": "Integrated solar roofing systems that combine aesthetics with power generation.",
+        "heliu": {
+          "name": "Heliu Tile",
+          "description": "Stone coated solar roof tile. Integrated system combining photovoltaic technology with premium roofing materials.",
+          "features": [
+            "Lightweight & Easy to install",
+            "Triple waterproof & Noise reduction",
+            "Fireproof Class A",
+            "Embedded high-efficiency photovoltaic design"
+          ]
+        },
+        "roofit": {
+          "name": "Roofit Steel Roof",
+          "description": "2-in-1 Solar Powered Roofing Material. 100% weatherproof, strong steel construction."
+        }
+      },
+      "solarModules": {
+        "title": "Solar Modules",
+        "description": "High-quality PV modules for various applications.",
+        "items": ["S Nano", "S MAX", "S BLADE", "S FIX"]
+      },
+      "airConditioning": {
+        "title": "Solar Air Conditioners",
+        "description": "Off-grid and Hybrid solar powered air conditioning solutions."
+      },
+      "lighting": {
+        "title": "Solar Lighting",
+        "description": "Superior quality project solar street lights with long-lasting lithium batteries."
+      },
+      "batteryStorage": {
+        "title": "Battery Storage",
+        "description": "Reliable energy storage solutions for day and night power."
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "About Enercam",
+    "subtitle": "Transforming how homeowners power their lives.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To deliver smarter, stronger, affordable and greener roofing solutions that empower homeowners to control their energy future."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "integrity": "Integrity: We build every roof as if it were our own.",
+        "innovation": "Innovation: We push solar technology forward.",
+        "sustainability": "Sustainability: Every installation reduces carbon impact.",
+        "customerFocus": "Customer Focus: We deliver clarity, honesty, and exceptional service."
+      }
+    },
+    "history": {
+      "title": "Our History",
+      "description": "Established in 2015, Enercam® Solar Roof has been committed to professional service and high-quality work across Central Africa."
+    },
+    "team": {
+      "title": "Our Team",
+      "quote": "ALONE WE CAN DO SO LITTLE; TOGETHER WE CAN DO SO MUCH",
+      "description": "One Team, One Family. We are proud of our passionate team dedicated to providing fulfilling solutions."
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Let’s Power Your Home With Smart Solar Roofing.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "phone": "622-672-1748",
+      "email": "info@enercam.com"
+    }
+  },
+  "Footer": {
+    "rights": "© 2025 Enercam. All rights reserved."
+  },
+  "CareersPage": {
+    "title": "Join Our Team",
+    "subtitle": "Help us build the future of roofing and renewable energy.",
+    "apply": "Apply Now",
+    "noOpenings": "Don't see a role for you? Send us your resume at careers@enercam.com",
+    "positions": {
+      "install": {
+        "title": "Solar Roof Installer",
+        "location": "Douala, Cameroon",
+        "description": "Experienced roofer or solar installer to lead installation projects."
+      },
+      "sales": {
+        "title": "Technical Sales Representative",
+        "location": "Remote / Hybrid",
+        "description": "Drive sales for our premium solar roofing products."
+      }
+    }
+  },
+  "FaqPage": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Enercam solar roofs.",
+    "items": {
+      "0": {
+        "question": "Are your solar roofs suitable for African climates?",
+        "answer": "Yes, they are. Africa has some of the highest solar irradiation levels in the world. Our solar roofs perform exceptionally well in hot, sunny climates and are designed to withstand heat, humidity, and strong winds."
+      },
+      "1": {
+        "question": "Can your solar roofs reduce my dependence on unreliable grid power?",
+        "answer": "Absolutely. Our solar roofs help households and businesses reduce outages caused by unstable grids. When paired with a battery system, they can provide continuous electricity even during blackouts."
+      },
+      "2": {
+        "question": "Do your solar roofs work during the rainy season?",
+        "answer": "Yes. Even during cloudy or rainy periods, our solar roofs still produce electricity—though at a slightly reduced output. Battery storage helps bridge low-sunlight days."
+      },
+      "3": {
+        "question": "How durable are your solar roofs in high heat or harsh weather?",
+        "answer": "Our solar roofs are engineered to operate efficiently in high temperatures and withstand storms, heavy rains, and high winds common in many African regions."
+      },
+      "4": {
+        "question": "What maintenance is required in dusty or sandy areas?",
+        "answer": "In regions with dust or harmattan winds, our solar roofs may need more frequent cleaning. A simple rinse every few weeks ensures maximum performance."
+      },
+      "5": {
+        "question": "Will your solar roof power essential loads during outages?",
+        "answer": "Yes. When combined with the right storage batteries, our solar roofs can power TV, lights, fridges, fans, routers, and other essential appliances during grid failures or fuel shortages."
+      },
+      "6": {
+        "question": "Can your solar roofs help me save on petrol/diesel generator costs?",
+        "answer": "Yes. Many African homes and businesses rely on expensive petrol/diesel generators. Our solar roof reduces fuel usage, noise, and maintenance costs significantly."
+      },
+      "7": {
+        "question": "Can you switch my existing roof to a solar roof?",
+        "answer": "No matter your roof, we could convert it into a solar roof through retro-fitting or completely re-installing a new, customizable solar roof."
+      },
+      "8": {
+        "question": "How long will a solar roof last in African conditions?",
+        "answer": "Solar panels typically last 25–30 years. High-quality mounting hardware also resists rust and corrosion, even in coastal areas like West or East Africa."
+      },
+      "9": {
+        "question": "Can rural homes benefit from your solar roof?",
+        "answer": "Yes. In off-grid or under-electrified areas, solar roofs provide reliable power without depending on the national grid. They are often the most cost-effective solution."
+      },
+      "10": {
+        "question": "Are your solar roofs affordable?",
+        "answer": "Our prices have dropped significantly. We also offer flexible payment options, financing plans, or phased upgrades to make solar more accessible."
+      }
+    }
+  },
+  "PartnersPage": {
+    "title": "Partner with Enercam",
+    "subtitle": "Join our network of manufacturing, distribution, and installation partners.",
+    "description": "Enercam has struck strategic partnerships with a range of local, regional, and international partners. Our partnership program is designed to simplify the design, marketing, and supply chain of any solar business.",
+    "benefits": {
+      "title": "Why Partner with Enercam?",
+      "description": "Developing a successful partnership with Enercam will allow you to focus more on your client’s solar projects and customer relations and less on design work, logistics, and upstream marketing."
+    },
+    "types": {
+      "manufacturing": "Manufacturing Partners",
+      "distribution": "Distribution Partners",
+      "installation": "Installation Partners"
+    },
+    "cta": "Become a Partner"
+  },
+  "ProjectsPage": {
+    "title": "Our Projects",
+    "subtitle": "Real-world examples of Enercam solar roofs in action.",
+    "douala": {
+      "title": "2 kW Solar Roof Installation",
+      "location": "Douala, Cameroon",
+      "description": "Located in one of Central Africa’s fastest-growing urban centers, this project aimed to provide reliable, clean energy to support both daily household needs and long-term energy stability.",
+      "outcome": "Seamless roof design with backup battery storage.",
+      "savings": "54% reduction in annual energy costs",
+      "quote": "Energy savings were immediate, and the roof looks incredible."
+    }
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "homeButton": "Back to Home"
+  }
+}

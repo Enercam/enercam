@@ -1,0 +1,313 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Toiture Intelligente. Énergie Solaire Intégrée.",
+      "subtitle": "Une toiture belle et durable qui produit de l'énergie propre pour votre maison.",
+      "cta": {
+        "quote": "Obtenir un Devis Gratuit",
+        "howItWorks": "Voir Comment Ça Marche"
+      }
+    },
+    "future": {
+      "title": "L'Avenir de la Toiture",
+      "description": "Les toits solaires Enercam® offrent des systèmes de toiture haut de gamme qui sont magnifiques, protègent votre maison et alimentent votre vie en énergie propre. Pas de panneaux encombrants. Pas de compromis. Juste de la performance pure."
+    },
+    "whyChoose": {
+      "title": "Pourquoi Choisir Enercam®",
+      "items": {
+        "0": "Factures d'énergie réduites dès le premier jour",
+        "1": "Toiture solaire intégrée avec une esthétique exceptionnelle",
+        "2": "Garantie de 35 ans sur la toiture et les composants énergétiques",
+        "3": "Installation experte par des professionnels certifiés"
+      }
+    },
+    "technology": {
+      "title": "Notre Technologie",
+      "description": "Nos tuiles solaires avancées s'intègrent parfaitement à votre ligne de toit tout en maximisant la capture de la lumière du soleil. Évitez de doubler la toiture de votre maison - d'où des économies significatives sur les coûts de construction."
+    },
+    "process": {
+      "title": "Comment Fonctionne la Toiture Solaire",
+      "subtitle": "Un parcours sans faille de la conception à la production d'énergie.",
+      "steps": {
+        "assessment": {
+          "title": "Évaluation et Conception",
+          "description": "Nous analysons votre toit et concevons un système personnalisé pour maximiser la production d'énergie."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Notre équipe certifiée gère la préparation du toit et l'installation précise des tuiles solaires."
+        },
+        "integration": {
+          "title": "Intégration Électrique",
+          "description": "Nous connectons votre système au réseau domestique et au stockage de batterie en toute sécurité."
+        },
+        "activation": {
+          "title": "Activation",
+          "description": "Tests du système, activation et formation sur la façon de surveiller votre énergie."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Résultats Réels",
+      "quote": "Passer à Enercam® a été la meilleure décision que nous ayons prise pour notre maison.",
+      "author": "La Famille Mbeh",
+      "cta": "Découvrir Plus d'Histoires"
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "contact": "Contact",
+    "careers": "Carrières",
+    "faq": "FAQs",
+    "partners": "Partenaires",
+    "projects": "Projets",
+    "projectsTestimonials": "Projets et Témoignages",
+    "whyEnercam": "Pourquoi Enercam",
+    "recommendations": "Recommandations"
+  },
+  "WhyEnercamPage": {
+    "title": "Pourquoi Enercam",
+    "subtitle": "Une toiture plus intelligente, des économies plus importantes et un avenir plus vert.",
+    "future": {
+      "title": "L'Avenir de la Toiture",
+      "description": "Les toits solaires Enercam® offrent des systèmes de toiture haut de gamme qui sont magnifiques, protègent votre maison et alimentent votre vie en énergie propre. Pas de panneaux encombrants. Pas de compromis. Juste de la performance pure. Pas besoin de doubler la toiture de votre maison, usine, chalet, etc."
+    },
+    "benefits": {
+      "title": "Pourquoi les Propriétaires Choisissent Enercam",
+      "items": {
+        "0": {
+          "title": "Factures d'Énergie Réduites",
+          "description": "Commencez à économiser sur les coûts d'électricité dès le premier jour grâce à une production solaire à haute efficacité."
+        },
+        "1": {
+          "title": "Esthétique Intégrée",
+          "description": "Une toiture solaire qui s'intègre parfaitement à l'architecture de votre maison."
+        },
+        "2": {
+          "title": "Garantie de 35 Ans",
+          "description": "Garantie leader de l'industrie sur la toiture et les composants énergétiques."
+        },
+        "3": {
+          "title": "Installation Experte",
+          "description": "Installé par des professionnels certifiés garantissant sécurité et longévité."
+        }
+      }
+    }
+  },
+  "RecommendationsPage": {
+    "title": "La Méthode Enercam",
+    "subtitle": "Des recommandations adaptées à vos besoins énergétiques spécifiques.",
+    "methods": {
+      "title": "Notre Approche de Recommandation",
+      "description": "Chez Enercam, nous recommandons diverses solutions solaires et d'économie de coûts en fonction des besoins et des circonstances de nos clients. En fonction du budget et des circonstances du client, nous recommandons généralement des toits solaires intégrés ou complets, des rénovations ou du neuf, côtier ou intérieur, financement ou propriété directe."
+    },
+    "needBased": {
+      "title": "Basé sur les Besoins",
+      "integrated": {
+        "title": "Toit Solaire Intégré",
+        "description": "Toit solaire partiel et intégré. Peut être converti progressivement en toits solaires complets selon les besoins du client."
+      },
+      "complete": {
+        "title": "Toit Solaire Complet",
+        "description": "Toits solaires de bout en bout offrant le rendement le plus élevé. Recommandé pour les ménages et les entreprises à forte consommation d'énergie (entrepôts et usines)."
+      }
+    },
+    "stageBased": {
+      "title": "Basé sur l'Étape",
+      "retrofit": {
+        "title": "Rénovation",
+        "description": "Nous rénovons avec des feuilles solaires sur mesure (feuilles Mema™). Feuilles solaires trapézoïdales et ondulées pour répondre à tous les besoins des clients."
+      },
+      "new": {
+        "title": "Nouveaux Toits Solaires",
+        "description": "Idéal pour les nouvelles constructions. Nos toits solaires Mema, Heliu et Roofit sont les meilleures ventes à choisir."
+      }
+    }
+  },
+  "ProductsPage": {
+    "title": "Nos Produits",
+    "subtitle": "Des solutions solaires de pointe pour tous les besoins.",
+    "categories": {
+      "solarRoofs": {
+        "title": "Toits Solaires",
+        "description": "Systèmes de toiture solaire intégrés alliant esthétique et production d'énergie.",
+        "heliu": {
+          "name": "Tuile Heliu",
+          "description": "Tuile solaire revêtue de pierre. Système intégré combinant technologie photovoltaïque et matériaux de toiture haut de gamme.",
+          "features": [
+            "Léger et Facile à installer",
+            "Triple étanchéité et Réduction du bruit",
+            "Ignifuge Classe A",
+            "Conception photovoltaïque haute efficacité intégrée"
+          ]
+        },
+        "roofit": {
+          "name": "Toit en Acier Roofit",
+          "description": "Matériau de toiture solaire 2-en-1. 100% étanche, construction en acier robuste."
+        }
+      },
+      "solarModules": {
+        "title": "Modules Solaires",
+        "description": "Modules PV de haute qualité pour diverses applications.",
+        "items": ["S Nano", "S MAX", "S BLADE", "S FIX"]
+      },
+      "airConditioning": {
+        "title": "Climatiseurs Solaires",
+        "description": "Solutions de climatisation solaire hors réseau et hybrides."
+      },
+      "lighting": {
+        "title": "Éclairage Solaire",
+        "description": "Lampadaires solaires de qualité supérieure avec batteries au lithium longue durée."
+      },
+      "batteryStorage": {
+        "title": "Stockage de Batterie",
+        "description": "Solutions de stockage d'énergie fiables pour une alimentation jour et nuit."
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "À Propos d'Enercam",
+    "subtitle": "Transformer la façon dont les propriétaires alimentent leur vie.",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Fournir des solutions de toiture plus intelligentes, plus solides, abordables et plus vertes qui permettent aux propriétaires de contrôler leur avenir énergétique."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "items": {
+        "integrity": "Intégrité : Nous construisons chaque toit comme si c'était le nôtre.",
+        "innovation": "Innovation : Nous faisons avancer la technologie solaire.",
+        "sustainability": "Durabilité : Chaque installation réduit l'impact carbone.",
+        "customerFocus": "Orientation Client : Nous offrons clarté, honnêteté et un service exceptionnel."
+      }
+    },
+    "history": {
+      "title": "Notre Histoire",
+      "description": "Établi en 2015, Enercam® Solar Roof s'engage à offrir un service professionnel et un travail de haute qualité à travers l'Afrique Centrale."
+    },
+    "team": {
+      "title": "Notre Équipe",
+      "quote": "SEUL NOUS POUVONS FAIRE SI PEU ; ENSEMBLE NOUS POUVONS FAIRE BEAUCOUP",
+      "description": "Une Équipe, Une Famille. Nous sommes fiers de notre équipe passionnée dédiée à fournir des solutions satisfaisantes."
+    }
+  },
+  "ContactPage": {
+    "title": "Contactez-nous",
+    "subtitle": "Alimentons Votre Maison Avec Une Toiture Solaire Intelligente.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer le Message"
+    },
+    "info": {
+      "phone": "622-672-1748",
+      "email": "info@enercam.com"
+    }
+  },
+  "Footer": {
+    "rights": "© 2025 Enercam. Tous droits réservés."
+  },
+  "CareersPage": {
+    "title": "Rejoignez Notre Équipe",
+    "subtitle": "Aidez-nous à construire l'avenir de la toiture et de l'énergie renouvelable.",
+    "apply": "Postuler Maintenant",
+    "noOpenings": "Vous ne voyez pas de poste pour vous ? Envoyez-nous votre CV à careers@enercam.com",
+    "positions": {
+      "install": {
+        "title": "Installateur de Toiture Solaire",
+        "location": "Douala, Cameroun",
+        "description": "Couvreur expérimenté ou installateur solaire pour diriger les projets d'installation."
+      },
+      "sales": {
+        "title": "Représentant Commercial Technique",
+        "location": "Télétravail / Hybride",
+        "description": "Stimuler les ventes de nos produits de toiture solaire haut de gamme."
+      }
+    }
+  },
+  "FaqPage": {
+    "title": "Foire Aux Questions",
+    "subtitle": "Tout ce que vous devez savoir sur les toits solaires Enercam.",
+    "items": {
+      "0": {
+        "question": "Vos toits solaires sont-ils adaptés aux climats africains ?",
+        "answer": "Oui, ils le sont. L'Afrique a des niveaux d'irradiation solaire parmi les plus élevés au monde. Nos toits solaires fonctionnent exceptionnellement bien dans les climats chauds et ensoleillés et sont conçus pour résister à la chaleur, à l'humidité et aux vents forts."
+      },
+      "1": {
+        "question": "Vos toits solaires peuvent-ils réduire ma dépendance au réseau électrique instable ?",
+        "answer": "Absolument. Nos toits solaires aident les ménages et les entreprises à réduire les pannes causées par des réseaux instables. Lorsqu'ils sont couplés à un système de batterie, ils peuvent fournir de l'électricité en continu même pendant les pannes."
+      },
+      "2": {
+        "question": "Vos toits solaires fonctionnent-ils pendant la saison des pluies ?",
+        "answer": "Oui. Même pendant les périodes nuageuses ou pluvieuses, nos toits solaires produisent toujours de l'électricité, bien qu'à un rendement légèrement réduit. Le stockage par batterie aide à combler les jours de faible ensoleillement."
+      },
+      "3": {
+        "question": "Quelle est la durabilité de vos toits solaires sous forte chaleur ou intempéries ?",
+        "answer": "Nos toits solaires sont conçus pour fonctionner efficacement à des températures élevées et résister aux tempêtes, aux fortes pluies et aux vents forts courants dans de nombreuses régions africaines."
+      },
+      "4": {
+        "question": "Quel entretien est nécessaire dans les zones poussiéreuses ou sablonneuses ?",
+        "answer": "Dans les régions avec de la poussière ou des vents d'harmattan, nos toits solaires peuvent nécessiter un nettoyage plus fréquent. Un simple rinçage toutes les quelques semaines assure une performance maximale."
+      },
+      "5": {
+        "question": "Votre toit solaire alimentera-t-il les charges essentielles pendant les pannes ?",
+        "answer": "Oui. Lorsqu'ils sont combinés avec les bonnes batteries de stockage, nos toits solaires peuvent alimenter la télévision, les lumières, les réfrigérateurs, les ventilateurs, les routeurs et d'autres appareils essentiels pendant les pannes de réseau ou les pénuries de carburant."
+      },
+      "6": {
+        "question": "Vos toits solaires peuvent-ils m'aider à économiser sur les coûts de générateur essence/diesel ?",
+        "answer": "Oui. De nombreux foyers et entreprises africains dépendent de générateurs coûteux. Notre toit solaire réduit considérablement l'utilisation de carburant, le bruit et les coûts de maintenance."
+      },
+      "7": {
+        "question": "Pouvez-vous transformer mon toit existant en toit solaire ?",
+        "answer": "Peu importe votre toit, nous pourrions le convertir en toit solaire par rénovation ou réinstallation complète d'un nouveau toit solaire personnalisable."
+      },
+      "8": {
+        "question": "Combien de temps durera un toit solaire dans les conditions africaines ?",
+        "answer": "Les panneaux solaires durent généralement 25 à 30 ans. Le matériel de montage de haute qualité résiste également à la rouille et à la corrosion, même dans les zones côtières comme l'Afrique de l'Ouest ou de l'Est."
+      },
+      "9": {
+        "question": "Les maisons rurales peuvent-elles bénéficier de votre toit solaire ?",
+        "answer": "Oui. Dans les zones hors réseau ou sous-électrifiées, les toits solaires fournissent une énergie fiable sans dépendre du réseau national. Ils sont souvent la solution la plus rentable."
+      },
+      "10": {
+        "question": "Vos toits solaires sont-ils abordables ?",
+        "answer": "Nos prix ont considérablement baissé. Nous proposons également des options de paiement flexibles, des plans de financement ou des mises à niveau progressives pour rendre le solaire plus accessible."
+      }
+    }
+  },
+  "PartnersPage": {
+    "title": "Devenir Partenaire Enercam",
+    "subtitle": "Rejoignez notre réseau de partenaires de fabrication, de distribution et d'installation.",
+    "description": "Enercam a conclu des partenariats stratégiques avec une gamme de partenaires locaux, régionaux et internationaux. Notre programme de partenariat est conçu pour simplifier la conception, le marketing et la chaîne d'approvisionnement de toute entreprise solaire.",
+    "benefits": {
+      "title": "Pourquoi s'associer avec Enercam ?",
+      "description": "Développer un partenariat réussi avec Enercam vous permettra de vous concentrer davantage sur les projets solaires de vos clients et les relations clients, et moins sur le travail de conception, la logistique et le marketing en amont."
+    },
+    "types": {
+      "manufacturing": "Partenaires de Fabrication",
+      "distribution": "Partenaires de Distribution",
+      "installation": "Partenaires d'Installation"
+    },
+    "cta": "Devenir Partenaire"
+  },
+  "ProjectsPage": {
+    "title": "Nos Projets",
+    "subtitle": "Exemples concrets de toits solaires Enercam en action.",
+    "douala": {
+      "title": "Installation de Toiture Solaire 2 kW",
+      "location": "Douala, Cameroun",
+      "description": "Situé dans l'un des centres urbains à la croissance la plus rapide d'Afrique centrale, ce projet visait à fournir une énergie fiable et propre pour soutenir à la fois les besoins quotidiens des ménages et la stabilité énergétique à long terme.",
+      "outcome": "Conception de toit sans faille avec stockage de batterie de secours.",
+      "savings": "Réduction de 54% des coûts énergétiques annuels",
+      "quote": "Les économies d'énergie ont été immédiates et le toit est incroyable."
+    }
+  },
+  "NotFoundPage": {
+    "title": "Page Non Trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas.",
+    "homeButton": "Retour à l'Accueil"
+  }
+}

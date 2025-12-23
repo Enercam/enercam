@@ -3,7 +3,7 @@
 ## Project Overview
 
 **Domain:** enercam.com  
-**Tech Stack:** Next.js 14+ (App Router), TypeScript, Tailwind CSS  
+**Tech Stack:** Next.js 16+ (App Router), TypeScript, Tailwind CSS  
 **Deployment:** Vercel  
 **Project Type:** Corporate Marketing Website with Lead Generation
 
@@ -52,7 +52,7 @@ Enercam Solar Roofs is a Central African clean energy company offering integrate
 ### 2.1 Tech Stack
 
 ```
-Frontend Framework: Next.js 14.2+ (App Router)
+Frontend Framework: Next.js 16+
 Language: TypeScript 5.3+
 Styling: Tailwind CSS 3.4+
 UI Components: Radix UI primitives + custom components
@@ -66,89 +66,7 @@ Monitoring: Vercel Speed Insights
 ### 2.2 Project Structure
 
 ```
-enercam-website/
-├── app/
-│   ├── (marketing)/
-│   │   ├── page.tsx                 # Homepage
-│   │   ├── about/
-│   │   │   ├── page.tsx             # About us
-│   │   │   ├── team/page.tsx        # Team page
-│   │   │   └── values/page.tsx      # Values & Mission
-│   │   ├── products/
-│   │   │   ├── page.tsx             # Products overview
-│   │   │   ├── solar-roofs/
-│   │   │   │   ├── page.tsx         # Solar roofs landing
-│   │   │   │   ├── heliu/page.tsx   # Heliu tiles
-│   │   │   │   ├── roofit/page.tsx  # Roofit steel
-│   │   │   │   └── mema/page.tsx    # Mema sheets
-│   │   │   ├── battery-storage/
-│   │   │   │   ├── page.tsx         # Storage overview
-│   │   │   │   ├── minicube/page.tsx
-│   │   │   │   └── megacube/page.tsx
-│   │   │   ├── solar-modules/page.tsx
-│   │   │   ├── air-conditioners/page.tsx
-│   │   │   └── lighting/page.tsx
-│   │   ├── how-it-works/page.tsx    # Installation process
-│   │   ├── projects/
-│   │   │   ├── page.tsx             # Case studies
-│   │   │   └── [slug]/page.tsx      # Individual projects
-│   │   ├── financing/page.tsx       # Financing options
-│   │   ├── partners/page.tsx        # Partnership info
-│   │   ├── careers/page.tsx         # Job openings
-│   │   ├── contact/page.tsx         # Contact form
-│   │   └── faq/page.tsx             # FAQ page
-│   ├── api/
-│   │   ├── contact/route.ts         # Contact form handler
-│   │   ├── quote/route.ts           # Quote request handler
-│   │   └── careers/route.ts         # Job application handler
-│   ├── layout.tsx                   # Root layout
-│   ├── globals.css                  # Global styles
-│   └── not-found.tsx                # 404 page
-├── components/
-│   ├── ui/                          # Shadcn/UI components
-│   ├── layout/
-│   │   ├── Header.tsx
-│   │   ├── Footer.tsx
-│   │   ├── MobileNav.tsx
-│   │   └── Breadcrumbs.tsx
-│   ├── sections/
-│   │   ├── Hero.tsx
-│   │   ├── Features.tsx
-│   │   ├── Products.tsx
-│   │   ├── Testimonials.tsx
-│   │   ├── CTA.tsx
-│   │   └── Stats.tsx
-│   ├── forms/
-│   │   ├── ContactForm.tsx
-│   │   ├── QuoteForm.tsx
-│   │   └── CareerForm.tsx
-│   ├── cards/
-│   │   ├── ProductCard.tsx
-│   │   ├── ProjectCard.tsx
-│   │   └── TeamCard.tsx
-│   └── common/
-│       ├── Button.tsx
-│       ├── Container.tsx
-│       ├── AnimatedSection.tsx
-│       └── VideoPlayer.tsx
-├── lib/
-│   ├── utils.ts                     # Utility functions
-│   ├── validations.ts               # Zod schemas
-│   ├── constants.ts                 # App constants
-│   └── email.ts                     # Email templates
-├── data/
-│   ├── products.ts                  # Product data
-│   ├── projects.ts                  # Case studies
-│   ├── team.ts                      # Team members
-│   └── faq.ts                       # FAQ content
-├── public/
-│   ├── images/
-│   ├── videos/
-│   └── documents/
-├── types/
-│   └── index.ts                     # TypeScript types
-└── config/
-    └── site.ts                      # Site configuration
+
 ```
 
 ### 2.3 Key Dependencies
@@ -1385,9 +1303,9 @@ TURNSTILE_SECRET_KEY=xxxxx
 ```json
 // vercel.json
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
   "framework": "nextjs",
   "regions": ["fra1"],
   "headers": [
@@ -1472,10 +1390,10 @@ module.exports = nextConfig;
 **Pre-deployment Checklist:**
 ```bash
 # Run locally before pushing
-npm run lint          # ESLint check
-npm run type-check    # TypeScript check
-npm run build         # Production build test
-npm run test          # Run tests (if applicable)
+pnpm run lint          # ESLint check
+pnpm run type-check    # TypeScript check
+pnpm run build         # Production build test
+pnpm run test          # Run tests (if applicable)
 ```
 
 ### 9.5 CI/CD Pipeline (Optional GitHub Actions)
@@ -1501,19 +1419,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-          cache: 'npm'
+          cache: 'pnpm'
       
       - name: Install dependencies
-        run: npm ci
+        run: pnpm ci
       
       - name: Run linter
-        run: npm run lint
+        run: pnpm run lint
       
       - name: Run type check
-        run: npm run type-check
+        run: pnpm run type-check
       
       - name: Build
-        run: npm run build
+        run: pnpm run build
 ```
 
 ---
@@ -2039,14 +1957,14 @@ git clone https://github.com/enercam/website.git
 cd website
 
 # Install dependencies
-npm install
+pnpm install
 
 # Copy environment variables
 cp .env.example .env.local
 # Add your API keys
 
 # Run development server
-npm run dev
+pnpm run dev
 
 # Open browser
 http://localhost:3000
@@ -2055,12 +1973,12 @@ http://localhost:3000
 ### 17.2 Common Commands
 
 ```bash
-npm run dev          # Start development server
-npm run build        # Production build
-npm run start        # Start production server
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix linting errors
-npm run type-check   # TypeScript check
+pnpm run dev          # Start development server
+pnpm run build        # Production build
+pnpm run start        # Start production server
+pnpm run lint         # Run ESLint
+pnpm run lint:fix     # Fix linting errors
+pnpm run type-check   # TypeScript check
 ```
 
 ### 17.3 Troubleshooting
@@ -3869,7 +3787,7 @@ export const META_DEFAULTS = {
 ## Appendix G: Development Checklist
 
 ### Pre-Development Setup
-- [ ] Install Node.js 20+ and npm/pnpm
+- [ ] Install Node.js 20+ and pnpm/ppnpm
 - [ ] Install VS Code with recommended extensions:
   - ESLint
   - Prettier
@@ -3944,8 +3862,8 @@ export const META_DEFAULTS = {
 ```bash
 # Solution: Clear cache and reinstall
 rm -rf .next node_modules package-lock.json
-npm install
-npm run build
+pnpm install
+pnpm run build
 ```
 
 **Issue: Images not loading**
@@ -3973,7 +3891,7 @@ npm run build
 1. Check tailwind.config.ts content paths
 2. Verify class names are not dynamic strings
 3. Clear .next cache
-npm run dev
+pnpm run dev
 ```
 
 **Issue: Slow page load**
@@ -3989,7 +3907,7 @@ npm run dev
 **Issue: TypeScript errors**
 ```bash
 # Run type check to see all errors
-npm run type-check
+pnpm run type-check
 
 # Common fixes:
 1. Add proper type annotations
@@ -4003,15 +3921,15 @@ npm run type-check
 
 ```bash
 # Local Development
-npm run dev              # Start dev server at localhost:3000
-npm run build            # Test production build locally
-npm run start            # Start production server
+ppnpm run dev              # Start dev server at localhost:3000
+ppnpm run build            # Test production build locally
+ppnpm run start            # Start production server
 
 # Code Quality
-npm run lint             # Check for lint errors
-npm run lint:fix         # Auto-fix lint errors
-npm run type-check       # Check TypeScript types
-npm run format           # Format code with Prettier
+ppnpm run lint             # Check for lint errors
+ppnpm run lint:fix         # Auto-fix lint errors
+ppnpm run type-check       # Check TypeScript types
+ppnpm run format           # Format code with Prettier
 
 # Vercel Deployment
 vercel                   # Deploy to preview
@@ -4056,3 +3974,274 @@ For questions or clarifications, refer to the specific appendices or contact the
 **Last Updated**: December 2025  
 **Prepared By**: CTO & Engineering Team  
 **Status**: Ready for Development
+
+
+
+# 🚀 Advanced Coding Protocol & Standards
+
+## 📌 Overview
+
+This document establishes the comprehensive coding protocol for the Enercam platform, enforcing **enterprise-grade standards**, **type-safe development**, and **FAANG-level code quality**. It ensures consistent, maintainable, and scalable code across all development activities.
+
+---
+
+## 👥 Assumed Roles
+
+| Role                       | Responsibility                                         |
+| -------------------------- | ------------------------------------------------------ |
+| 🧠 Lead Principal Engineer | Architecture decisions, code review, and technical standards |
+| 🔧 Full-Stack Engineer     | Implementation, testing, and feature development       |
+| 🔍 QA Engineer             | Code quality validation, testing, and automation       |
+| 🎨 Frontend Engineer       | UI/UX implementation and component architecture        |
+| ⚙️ Backend Engineer        | API development, data modeling, and service integration |
+
+---
+
+## 🎯 Objective
+
+> **Deliver production-ready, type-safe, and maintainable code that adheres to enterprise standards while ensuring optimal performance and security.**
+
+- Must be **type-safe** with zero `any` types
+- Code must be **self-documenting** and **testable**
+- **Performance optimization** is mandatory
+- **Security-first** approach required
+
+---
+
+## ✅ TypeScript Coding Guardrails
+
+| Area                 | Rule                                                      |
+| -------------------- | --------------------------------------------------------- |
+| 🚫 No 'any' Types    | Prohibit `any` type usage; use `unknown` or generics      |
+| 🔒 Strict Typing     | All variables, parameters, and returns must be typed      |
+| 🧩 Interface Design  | Use interfaces for contracts and domain modeling          |
+| 🎯 Generic Usage     | Leverage generics for reusable, type-safe components      |
+| 🔍 Type Narrowing    | Use proper type guards and assertion functions            |
+| 📝 JSDoc Comments    | Document all public APIs and complex logic                |
+| 🧪 Test Coverage     | Minimum 80% coverage for business logic                   |
+
+---
+
+## 🧪 Mandatory Code Quality Checklist
+
+### 🔍 Type Safety Verification
+
+- [ ] `✅` No `any` types used anywhere in codebase
+- [ ] `✅` All function parameters explicitly typed
+- [ ] `✅` All return types explicitly defined
+- [ ] [ ] `✅` Generic constraints properly defined
+- [ ] `✅` Type guards implemented where needed
+
+### 📄 Code Structure Analysis
+
+- [ ] `✅` Single responsibility principle followed
+- [ ] `✅` DRY principle applied (no code duplication)
+- [ ] `✅` SOLID principles implemented
+- [ ] `✅` Proper error handling with Result<T, E> pattern
+- [ ] `✅` Consistent naming conventions used
+
+### 🚨 Error Handling Standards
+
+- [ ] `✅` All errors use HealthcareError class
+- [ ] `✅` Result<T, E> pattern for service layer operations
+- [ ] `✅` No generic `throw new Error()` statements
+- [ ] `✅` Proper error logging and monitoring
+- [ ] `✅` User-friendly error messages
+
+### 🔍 Performance & Security
+
+- [ ] `✅` No hardcoded secrets or credentials
+- [ ] `✅` Input validation on all user inputs
+- [ ] `✅` Proper authentication and authorization
+- [ ] `✅` Database queries optimized
+- [ ] `✅` Memory leaks prevented
+
+---
+
+## 🧾 Code Quality Templates
+
+### 🔍 Type Definition Template
+
+```typescript
+// ✅ GOOD: Explicit typing with generics
+interface ApiResponse<T> {
+  data: T;
+  status: 'success' | 'error';
+  message?: string;
+}
+
+// ❌ BAD: Using any
+interface ApiResponse {
+  data: any;
+  status: any;
+  message?: any;
+}
+```
+
+### 🧠 Error Handling Template
+
+```typescript
+// ✅ GOOD: Result pattern with HealthcareError
+type Result<T, E = HealthcareError> = 
+  | { success: true; data: T }
+  | { success: false; error: E };
+
+class HealthcareError extends Error {
+  constructor(
+    public code: string,
+    message: string,
+    public statusCode: number = 500
+  ) {
+    super(message);
+    this.name = 'HealthcareError';
+  }
+}
+
+// ❌ BAD: Generic error throwing
+throw new Error('Something went wrong');
+```
+
+### 🔎 Component Architecture Template
+
+```typescript
+// ✅ GOOD: Properly typed React component
+interface UserProfileProps {
+  userId: string;
+  onUpdate: (user: User) => Promise<Result<void, HealthcareError>>;
+  isEditable?: boolean;
+}
+
+export const UserProfile: React.FC<UserProfileProps> = ({
+  userId,
+  onUpdate,
+  isEditable = false
+}) => {
+  // Component implementation
+};
+```
+
+---
+
+## 🧪 Quality Assurance Protocol
+
+| Check                     | Status | Requirement |
+| ------------------------- | ------ | ----------- |
+| TypeScript Compilation    | ✅     | Zero errors, zero warnings |
+| Linting Passed            | ✅     | ESLint + Prettier compliance |
+| Type Coverage             | ✅     | 100% type coverage |
+| Test Coverage             | ✅     | Minimum 80% for business logic |
+| Security Scan             | ✅     | No vulnerabilities detected |
+| Performance Audit         | ✅     | Lighthouse score > 90 |
+| Code Review               | ✅     | Peer review completed |
+
+> ⚠️ Only merge code after achieving **Level 4+ verification**.
+
+---
+
+## 🧠 Implementation Guidelines
+
+### 1. **Type-First Development**
+```typescript
+// Define types before implementation
+interface UserService {
+  createUser(userData: CreateUserRequest): Promise<Result<User, HealthcareError>>;
+  updateUser(id: string, updates: Partial<User>): Promise<Result<User, HealthcareError>>;
+  deleteUser(id: string): Promise<Result<void, HealthcareError>>;
+}
+```
+
+### 2. **Error Handling Strategy**
+```typescript
+// Service layer error handling
+export class UserService implements UserService {
+  async createUser(userData: CreateUserRequest): Promise<Result<User, HealthcareError>> {
+    try {
+      const validation = validateUserData(userData);
+      if (!validation.success) {
+        return { success: false, error: validation.error };
+      }
+      
+      const user = await this.userRepository.create(userData);
+      return { success: true, data: user };
+    } catch (error) {
+      return { 
+        success: false, 
+        error: new HealthcareError('USER_CREATION_FAILED', 'Failed to create user', 500) 
+      };
+    }
+  }
+}
+```
+
+### 3. **Component Architecture**
+```typescript
+// React component with proper typing
+interface OnboardingStepProps<T = unknown> {
+  data: T;
+  onNext: (data: T) => void;
+  onPrevious: () => void;
+  isLoading?: boolean;
+  errors?: Record<string, string>;
+}
+
+export const OnboardingStep = <T,>({
+  data,
+  onNext,
+  onPrevious,
+  isLoading = false,
+  errors = {}
+}: OnboardingStepProps<T>) => {
+  // Component implementation
+};
+```
+
+### 4. **API Contract Definition**
+```typescript
+// API route with proper typing
+export async function POST(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Response> {
+  const { id } = await params;
+  
+  const result = await userService.getUser(id);
+  
+  if (!result.success) {
+    return NextResponse.json(
+      { error: result.error.message },
+      { status: result.error.statusCode }
+    );
+  }
+  
+  return NextResponse.json({ data: result.data });
+}
+```
+
+---
+
+## 📦 Deliverables Checklist
+
+- [ ] `✅` TypeScript compilation successful (zero errors)
+- [ ] `✅` All types explicitly defined
+- [ ] `✅` Error handling implemented with Result pattern
+- [ ] `✅` Unit tests written and passing
+- [ ] `✅` Integration tests passing
+- [ ] `✅` Code review completed
+- [ ] `✅` Security scan passed
+- [ ] `✅` Performance benchmarks met
+- [ ] `✅` Documentation updated
+
+---
+
+## 🧠 Self-Review Questions
+
+Before submitting code, ask:
+
+- [ ] Did I avoid using `any` types anywhere?
+- [ ] Are all my functions properly typed with explicit return types?
+- [ ] Did I implement proper error handling with the Result pattern?
+- [ ] Are my interfaces clear and well-documented?
+- [ ] Did I write tests for all business logic?
+- [ ] Is my code following SOLID principles?
+- [ ] Would another senior engineer understand this code immediately?
+- [ ] Have I considered edge cases and error scenarios?
